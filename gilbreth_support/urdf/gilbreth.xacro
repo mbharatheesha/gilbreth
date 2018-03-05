@@ -7,10 +7,6 @@
   <!-- bins -->
   <xacro:include filename="$(find gilbreth_support)/urdf/bin/bin.urdf.xacro"/>
   <xacro:bin_urdf prefix="bin_1_"/>
-  <!-- <xacro:bin_urdf prefix="bin_2_"/>
-  <xacro:bin_urdf prefix="bin_3_"/>
-  <xacro:bin_urdf prefix="bin_4_"/>
-  <xacro:bin_urdf prefix="bin_5_"/> -->
 
   <!-- depth camera -->
   <xacro:include filename="$(find gilbreth_support)/urdf/depth_camera/depth_camera.urdf.xacro"/>
@@ -45,7 +41,7 @@
   <joint name="bin_1_joint" type="fixed">
     <parent link="world" />
     <child link="bin_1_base_link" />
-    <origin xyz="-0.3 -1.2 0.0" rpy="0 0 0" />
+    <origin xyz="-1.8 -2.5 0.0" rpy="0 0 0" />
   </joint>
 
   <!-- a bin in the frame bin2_frame -->
